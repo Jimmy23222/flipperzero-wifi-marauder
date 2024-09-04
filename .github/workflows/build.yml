@@ -1,4 +1,4 @@
-name: "FAP Build"
+permissions: name: "FAP Build"
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ jobs:
       matrix:
         include:
           - name: dev channel
-            sdk-channel: dev
+            sdk-channel: dev  
           - name: release channel
             sdk-channel: release
           - name: Unleashed dev
